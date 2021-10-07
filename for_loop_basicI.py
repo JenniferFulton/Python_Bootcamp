@@ -14,6 +14,10 @@ for i in range(101):
         print("Coding")
 
 #4 Whoa. That Sucker's Huge - Add odd integers from 0 to 500,000, and print the final sum.
+sum = 0
+for odd_num in range (1,500001,2):
+    sum = sum + odd_num
+print(sum)
 
 
 #5 Countdown by Fours - Print positive numbers starting at 2018, counting down by fours.
