@@ -1,17 +1,17 @@
-# #1 Basic - Print all integers from 0 to 150.
-# for num in range(151):
-#     print(num)
+#1 Basic - Print all integers from 0 to 150.
+for num in range(151):
+    print(num)
 
-# #2 Multiples of Five - Print all the multiples of 5 from 5 to 1,000
-# for fives in range(0,1001,5):
-#     print(fives)
+#2 Multiples of Five - Print all the multiples of 5 from 5 to 1,000
+for fives in range(0,1001,5):
+    print(fives)
 
 #3 Counting, the Dojo Way - Print integers 1 to 100. If divisible by 5, print "Coding" instead. If divisible by 10, print "Coding Dojo".
 for i in range(101):
-    if i % 5 == 0:
-        print("Coding")
-    elif i % 10 == 0:
+    if i % 10 == 0:
         print("Coding Dojo")
+    elif i % 5 == 0:
+        print("Coding")
 
 #4 Whoa. That Sucker's Huge - Add odd integers from 0 to 500,000, and print the final sum.
 
