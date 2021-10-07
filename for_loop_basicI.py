@@ -1,5 +1,6 @@
 #1 Basic - Print all integers from 0 to 150.
-
+for num in range(151):
+    print(num)
 
 #2 Multiples of Five - Print all the multiples of 5 from 5 to 1,000
 
