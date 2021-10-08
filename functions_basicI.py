@@ -25,22 +25,27 @@ def a():
     return 5
     print(10)
 print(a())
+#5
+#will not print 10 since it is after the return
 
 #5
 def a():
     print(5)
 x = a()
 print(x)
+#5
 
 #6
 def a(b,c):
     print(b+c)
 print(a(1,2) + a(2,3))
+#8
 
 #7
 def a(b,c):
     return str(b)+str(c)
 print(a(2,5))
+#25
 
 #8
 def a():
