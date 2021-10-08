@@ -4,17 +4,21 @@
 def a():
     return 5
 print(a())
+#5
 
 #2
 def a():
     return 5
 print(a()+a())
+#10
 
 #3
 def a():
     return 5
     return 10
 print(a())
+#5
+#once it returns a value it will not run any other code in the function
 
 #4
 def a():
