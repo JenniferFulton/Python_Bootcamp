@@ -34,12 +34,14 @@ def a():
 x = a()
 print(x)
 #5
+#When the code is run, it is printing 5 and none and I am unsure why??
 
 #6
 def a(b,c):
     print(b+c)
 print(a(1,2) + a(2,3))
 #8
+#When the code is run it is returning a "NoneType" error??
 
 #7
 def a(b,c):
@@ -57,6 +59,8 @@ def a():
         return 10
     return 7
 print(a())
+#100
+#10
 
 #9
 def a(b,c):
@@ -68,12 +72,16 @@ def a(b,c):
 print(a(2,3))
 print(a(5,3))
 print(a(2,3) + a(5,3))
+#7
+#14
+#21
 
 #10
 def a(b,c):
     return b+c
     return 10
 print(a(3,5))
+#8
 
 #11
 b = 500
@@ -84,6 +92,10 @@ def a():
 print(b)
 a()
 print(b)
+#500
+#500
+#300
+#300
 
 #12
 b = 500
@@ -95,6 +107,12 @@ def a():
 print(b)
 a()
 print(b)
+#500
+#500
+#300
+#300
+#300
+#Incorrect prediction, Unsure why a 3rd 300 won't print
 
 #13
 b = 500
