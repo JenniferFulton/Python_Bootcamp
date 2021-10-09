@@ -124,6 +124,10 @@ def a():
 print(b)
 b=a()
 print(b)
+# 500
+# 500
+# 300
+# 300
 
 #14
 def a():
@@ -133,6 +137,9 @@ def a():
 def b():
     print(3)
 a()
+#1
+#3
+#2
 
 #15
 def a():
@@ -145,4 +152,7 @@ def b():
     return 5
 y = a()
 print(y)
-
+#1
+# 3
+# 5
+# 10
