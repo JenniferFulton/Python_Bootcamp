@@ -63,22 +63,23 @@ print(length([]))
 # Example: minimum([37,2,1,-9]) should return -9
 # Example: minimum([]) should return False
 
-def minimum(list):
+def mini(list):
     if len(list) == 0:
         return False
     else:
         for i in range(0,len(list)):
             if list[i] <= list[0]:
-                list[i] = min
+                minimum = list[i]
             else:
-                list[0] = min
-    return min
-print(minimum([]))
-print(minimum([1,2,3,4,5]))
+                pass
+    return minimum
+print(mini([]))
+print(mini([-5,7,-6,3,0,10]))
 
 # Maximum - Create a function that takes a list and returns the maximum value in the array. If the list is empty, have the function return False.
 # Example: maximum([37,2,1,-9]) should return 37
 # Example: maximum([]) should return False
+
 
 # Ultimate Analysis - Create a function that takes a list and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the list.
 # Example: ultimate_analysis([37,2,1,-9]) should return {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 }
