@@ -29,6 +29,13 @@ print(count_positives([-1,2,3,4,-5,6]))
 # Example: sum_total([1,2,3,4]) should return 10
 # Example: sum_total([6,3,-2]) should return 7
 
+def sum_total(list_):
+    sum = 0
+    for i in range(0,len(list_)):
+        sum = sum + list_[i]
+    return sum
+print(sum_total([1,2,4,7,3,-6]))
+
 # Average - Create a function that takes a list and returns the average of all the values.
 # Example: average([1,2,3,4]) should return 2.5
 
