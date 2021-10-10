@@ -39,9 +39,25 @@ print(sum_total([1,2,4,7,3,-6]))
 # Average - Create a function that takes a list and returns the average of all the values.
 # Example: average([1,2,3,4]) should return 2.5
 
+def average(list):
+    sum = 0
+    for i in range(0,len(list)):
+        sum = sum + list[i]
+    average = sum / len(list)
+    return average
+print(average([1,2,4,7,3,-5]))
+
 # Length - Create a function that takes a list and returns the length of the list.
 # Example: length([37,2,1,-9]) should return 4
 # Example: length([]) should return 0
+
+def length(list):
+    if len(list) == 0:
+        return False
+    else:
+        return len(list)
+print(length([1,6,3,8,9,10]))
+print(length([]))
 
 # Minimum - Create a function that takes a list of numbers and returns the minimum value in the list. If the list is empty, have the function return False.
 # Example: minimum([37,2,1,-9]) should return -9
