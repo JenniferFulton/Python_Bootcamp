@@ -80,6 +80,17 @@ print(mini([-5,7,-6,3,0,10]))
 # Example: maximum([37,2,1,-9]) should return 37
 # Example: maximum([]) should return False
 
+def max(list):
+    if len(list) == 0:
+        return False
+    maximum = list[0]
+    for i in list:
+        if i > maximum:
+            maximum = i
+    return maximum
+
+print(max([]))
+print(max([-5,7,100,3,300,10]))
 
 # Ultimate Analysis - Create a function that takes a list and returns a dictionary that has the sumTotal, average, minimum, maximum and length of the list.
 # Example: ultimate_analysis([37,2,1,-9]) should return {'sumTotal': 31, 'average': 7.75, 'minimum': -9, 'maximum': 37, 'length': 4 }
