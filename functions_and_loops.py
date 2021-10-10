@@ -63,6 +63,19 @@ print(length([]))
 # Example: minimum([37,2,1,-9]) should return -9
 # Example: minimum([]) should return False
 
+def minimum(list):
+    if len(list) == 0:
+        return False
+    else:
+        for i in range(0,len(list)):
+            if list[i] <= list[0]:
+                list[i] = min
+            else:
+                list[0] = min
+    return min
+print(minimum([]))
+print(minimum([1,2,3,4,5]))
+
 # Maximum - Create a function that takes a list and returns the maximum value in the array. If the list is empty, have the function return False.
 # Example: maximum([37,2,1,-9]) should return 37
 # Example: maximum([]) should return False
