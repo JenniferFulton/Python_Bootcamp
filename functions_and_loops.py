@@ -109,3 +109,13 @@ print(ultimate_analysis([37,2,1,-9]))
 
 # Reverse List - Create a function that takes a list and return that list with values reversed. Do this without creating a second list. (This challenge is known to appear during basic technical interviews.)
 # Example: reverse_list([37,2,1,-9]) should return [-9,1,2,37]
+
+def reverse(list):
+    middle = round(len(list) / 2)
+    for i in range(0, middle, 1):
+        temp = list[i]
+        list[i] = list [len(list)-1-i]
+        list [len(list)-1-i] = temp
+    return list
+
+print(reverse([1,2,3,4,5]))
