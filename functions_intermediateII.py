@@ -32,6 +32,8 @@ students = [
         {'first_name' : 'KB', 'last_name' : 'Tonel'}
     ]
 def iterate_dictionary(dictionary):
+    for key, value in dictionary:
+        print(key, value)
 iterate_dictionary(students) 
 
 
