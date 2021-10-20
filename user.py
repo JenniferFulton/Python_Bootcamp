@@ -24,3 +24,15 @@ class User:
 Jen = User("Jennifer","PNC")
 Merg = User("Morgan", "BOA")
 Wendy = User("Wendy", "PNC")
+
+# Have the first user make 3 deposits and 1 withdrawal and then display their balance
+Jen.make_deposits(100)
+Jen.make_deposits(50)
+Jen.make_deposits(200)
+Jen.display_balance()
+
+# Have the second user make 2 deposits and 2 withdrawals and then display their balance
+
+# Have the third user make 1 deposits and 3 withdrawals and then display their balance
+
+# BONUS: Add a transfer_money method; have the first user transfer money to the third user and then print both users' balances
