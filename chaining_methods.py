@@ -25,7 +25,7 @@ class User:
         return self
     
     def display_balance(self):
-        print(self.name +"'s","Balance:", self.balance)
+        print(f"{self.name}'s Balance: {self.balance}")
 
 
 Jen = User("Jennifer","PNC")
