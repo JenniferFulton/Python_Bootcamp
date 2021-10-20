@@ -19,7 +19,7 @@ class User:
         return self
     
     def display_balance(self):
-        print(self.balance)
+        print(self.name +"'s","Balance:", self.balance)
 
 Jen = User("Jennifer","PNC")
 Merg = User("Morgan", "BOA")
@@ -29,10 +29,14 @@ Wendy = User("Wendy", "PNC")
 Jen.make_deposits(100)
 Jen.make_deposits(50)
 Jen.make_deposits(200)
+Jen.make_withdrawal(25)
 Jen.display_balance()
 
 # Have the second user make 2 deposits and 2 withdrawals and then display their balance
-
+Merg.make_deposits(500)
+Merg.make_deposits(20)
+Merg.make_withdrawal(57)
+Merg.display_balance()
 # Have the third user make 1 deposits and 3 withdrawals and then display their balance
 
 # BONUS: Add a transfer_money method; have the first user transfer money to the third user and then print both users' balances
