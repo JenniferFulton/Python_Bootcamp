@@ -13,42 +13,44 @@ class BankAccount:
     def __init__(self, balance, interest_rate):
         self.balance = balance
         self.interest_rate = interest_rate
-    
-    def deposit(self, amount):
-        self.balance += amount
-        return self
-
-    def withdraw(self, amount):
-        self.balance -= amount
-        return self
-
-    def account_info(self):
-        print(f"Account Balance: {self.balance}")
-    
-    def yield_interest(self):
-        if self.balance <= 0:
-            return False
-        else:
-            self.balance += (self.balance * (self.interest_rate/100))
-            return self
 
 class User:
-    def __init__(self, name, bank):
+    def __init__(self, name, account):
         self.name = name
-        self.bank = bank
-        self.balance = 0
+        self.account = BankAccount(1000,3)
     
     def make_deposits(self, amount):
-        self.balance += amount
+        self.account.balance += amount
         return self
     
     def make_withdrawal(self,amount):
-        self.balance -= amount
+        self.account.balance -= amount
         return self
     
     def transfer_money(self, amount, who):
-        self.balance -= amount
-        who.balance += amount
+        self.account.balance -= amount
+        who.account.balance += amount
+        return self
+
+    def yield_interest(self):
+        if self.account.balance <= 0:
+            return False
+        else:
+            self.account.balance += (self.account.balance * (self.account.interest_rate/100))
+            return self
     
     def display_balance(self):
-        print(f"{self.name}'s Balance: {self.balance}")
+        print(f"{self.name}'s Balance: {self.account.balance}")
+
+PNC = BankAccount(1000,5)
+Jen = User("Jennifer",PNC)
+
+BOA = BankAccount(100,3)
+Merg = User("Merg", BOA)
+
+
+
+Jen.make_deposits(100).make_deposits(100).make_withdrawal(50).yield_interest().transfer_money(184.5, Merg).display_balance()
+Merg.display_balance()
+
+
