@@ -13,4 +13,5 @@ class BankAccount:
         self.balance = balance
         self.interest_rate = interest_rate
     
-    
+    def deposit(self, amount):
+        self.balance += amount
