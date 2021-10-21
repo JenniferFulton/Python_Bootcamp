@@ -15,6 +15,18 @@ class BankAccount:
     
     def deposit(self, amount):
         self.balance += amount
+        return self
 
     def withdraw(self, amount):
         self.balance -= amount
+        return self
+
+    def account_info(self):
+        print(f"Account Balance: {self.balance}")
+    
+    def yield_interest(self):
+        if self.balance <= 0:
+            return False
+        else:
+            self.balance += (self.balance * self.interest_rate)
+            return self
