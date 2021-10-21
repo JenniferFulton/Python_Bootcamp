@@ -37,5 +37,7 @@ PNC = BankAccount(2000, 3)
 Discover = BankAccount(30000, 8)
 
 # To the first account, make 3 deposits and 1 withdrawal, then calculate interest and display the account's info all in one line of code (i.e. chaining)
+PNC.deposit(100).deposit(1500).deposit(300).withdraw(500).yield_interest().account_info()
 
 # To the second account, make 2 deposits and 4 withdrawals, then calculate interest and display the account's info all in one line of code (i.e. chaining)
+Discover.deposit(3000).deposit(200).withdraw(1200).withdraw(1000).withdraw(500).withdraw(2000).yield_interest().account_info()
