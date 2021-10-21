@@ -28,5 +28,14 @@ class BankAccount:
         if self.balance <= 0:
             return False
         else:
-            self.balance += (self.balance * self.interest_rate)
+            self.balance += (self.balance * (self.interest_rate/100))
             return self
+
+# Create 2 accounts
+
+PNC = BankAccount(2000, 3)
+Discover = BankAccount(30000, 8)
+
+# To the first account, make 3 deposits and 1 withdrawal, then calculate interest and display the account's info all in one line of code (i.e. chaining)
+
+# To the second account, make 2 deposits and 4 withdrawals, then calculate interest and display the account's info all in one line of code (i.e. chaining)
