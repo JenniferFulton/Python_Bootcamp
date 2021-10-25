@@ -42,5 +42,25 @@ class Ninja:
         self.last_name = last_name
         self.treats = treats
         self.pet_food = pet_food
-        self.pet = pet
-        
+        self.pet = Pet("Sophie","Doodle","Smile")
+
+    def walk(self):
+        self.pet.play()
+        return self
+    
+    def feed(self):
+        self.pet.eat()
+        return self
+    
+    def bathe(self):
+        self.pet.noise(noise="WOOF!")
+        return self
+
+    def stats(self):
+        print(f"{self.pet.name}'s Health: {self.pet.energy}")
+        print(f"{self.pet.name}'s Health: {self.pet.health}")
+
+Lucky = Pet("Lucky","Golden","roll-over")
+Jen = Ninja("Jennifer","Fulton","softies","merrick",Lucky)
+
+Jen.walk().feed().bathe().stats()
