@@ -15,9 +15,9 @@ class BankAccount:
         self.interest_rate = interest_rate
 
 class User:
-    def __init__(self, name, account):
+    def __init__(self, name, account=BankAccount(0,5)):
         self.name = name
-        self.account = BankAccount(1000,3)
+        self.account = account
     
     def make_deposits(self, amount):
         self.account.balance += amount
