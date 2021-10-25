@@ -37,12 +37,12 @@ class Pet:
 # bathe() - cleans the ninja's pet invoking the pet noise() method
 
 class Ninja:
-    def __init__(self, first_name , last_name , treats , pet_food , pet):
+    def __init__(self, first_name , last_name , treats , pet_food , pet=Pet("Sophie","Doodle", "Smile")):
         self.first_name = first_name
         self.last_name = last_name
         self.treats = treats
         self.pet_food = pet_food
-        self.pet = Pet("Sophie","Doodle","Smile")
+        self.pet = pet
 
     def walk(self):
         self.pet.play()
@@ -61,6 +61,6 @@ class Ninja:
         print(f"{self.pet.name}'s Health: {self.pet.health}")
 
 Lucky = Pet("Lucky","Golden","roll-over")
-Jen = Ninja("Jennifer","Fulton","softies","merrick",Lucky)
+Jen = Ninja("Jennifer","Fulton","softies","merrick", Lucky)
 
 Jen.walk().feed().bathe().stats()
